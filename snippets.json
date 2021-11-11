@@ -1,7 +1,7 @@
 {
-  "Relay Fragment Component2": {
+  "Relay useFragment component": {
     "scope": "typescriptreact",
-    "prefix": "rrf2",
+    "prefix": "rrf",
     "body": [
       "import React from 'react';2",
       "import { graphql, useFragment } from 'react-relay';",
@@ -15,9 +15,19 @@
       "}"
     ]
   },
-  "Relay Fragment Prop": {
+  "Relay useFragment key prop": {
     "scope": "typescriptreact",
     "prefix": "rrp",
     "body": "$1: ${TM_FILENAME_BASE}_$1$$key"
+  },
+  "Relay useMutation hook": {
+    "scope": "typescriptreact",
+    "prefix": "rmu",
+    "body": [
+      "const [commit$1, isInFlight$1] = useMutation<$2>(graphql`",
+      "mutation ${TM_FILENAME_BASE}_$1Mutation($input: $3) {",
+      "$4",
+      "}"
+    ]
   }
 }
