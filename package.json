@@ -14,5 +14,9 @@
         "path": "./snippets.json"
       }
     ]
-  }
+  },
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "repository": "https://github.com/sambou/relay-snippets"
 }
